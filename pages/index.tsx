@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Button from '@/components/ui/Button/Button';
 import Icon from '@/components/ui/Icon/Icon';
+import Title from '@/components/ui/Title/Title';
 
 const Home: NextPage = () => {
   const handleClickEvent = () => {
@@ -55,6 +56,21 @@ const Home: NextPage = () => {
           Mirror.xyz
           <Icon icon="LinkArrow" />
         </Button>
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <Title variant="black" size="lg" className="font-semibold">
+          Making NFT Lending and Staking easy.
+        </Title>
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <Title variant="black" size="md" className="font-bold">
+          NFT Liquidation Solution
+        </Title>
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <Title variant="black" size="sm" className="font-bold">
+          DegenApe
+        </Title>
       </div>
     </div>
   );

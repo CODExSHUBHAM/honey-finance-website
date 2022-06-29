@@ -11,3 +11,14 @@ export const SIZE = {
   md: 'px-9 py-5',
   sm: 'px-5 py-2',
 };
+
+export const TITLE_VARIANT = {
+  black: 'text-black',
+  white: 'text-white',
+};
+
+export const TITLE_SIZE = {
+  lg: 'text-6xl',
+  md: 'text-5xl',
+  sm: 'text-4xl',
+};

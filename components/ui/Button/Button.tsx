@@ -1,36 +1,41 @@
-const BUTTON_TYPE = {
-  PRIMARY: 'bg-primary text-white shadow-default-mini shadow-black',
-  SECONDARY:
-    'bg-white text-primary border border-2 border-primary shadow-default-mini shadow-black',
-  BLACK: 'bg-black text-white text-sm font-semibold',
-};
-
-const BUTTON_SIZE = {
-  md: 'px-9 py-5',
-  sm: 'px-5 py-2',
-};
+import React from 'react';
+import { VARIANT, SIZE } from './constants';
 
 type ButtonProps = {
-  buttonType?: keyof typeof BUTTON_TYPE;
-  buttonSize?: keyof typeof BUTTON_SIZE;
+  className?: string;
+  variant?: keyof typeof VARIANT;
+  size?: keyof typeof SIZE;
+  as?: keyof JSX.IntrinsicElements;
+  onClick?: () => void;
+  href?: string;
+  target?: string;
   children?: React.ReactNode;
 };
 
 function Button({
-  buttonType = 'PRIMARY',
-  buttonSize = 'md',
+  className = '',
+  variant = 'primary',
+  size = 'md',
+  as,
+  onClick,
+  href,
+  target,
   children,
+  ...props
 }: ButtonProps): JSX.Element {
+  const Component = as || ('button' as keyof JSX.IntrinsicElements);
+
   return (
-    <button
-      type="button"
-      className={`leading-tight tracking-[0.08em] uppercase rounded-sm font-mono  ${BUTTON_TYPE[buttonType]} ${BUTTON_SIZE[buttonSize]}`}
+    <Component
+      className={`leading-tight tracking-[0.08em] uppercase rounded-sm font-mono ${VARIANT[variant]} ${SIZE[size]} ${className}`}
+      onClick={onClick}
+      href={href}
+      target={target}
+      {...props}
     >
       {children}
-    </button>
+    </Component>
   );
 }
 
 export default Button;
-
-//inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-primary hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500

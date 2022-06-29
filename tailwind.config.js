@@ -15,6 +15,7 @@ module.exports = {
       boxShadow: {
         default: '6px 6px 0px',
         'default-mini': '4px 4px 0px 0px',
+        'default-left': '-4px 4px 0px 0px',
       },
       colors: {
         white: '#ffffff',

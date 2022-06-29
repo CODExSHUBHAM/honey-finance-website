@@ -3,8 +3,8 @@ export const VARIANT = {
   secondary:
     'bg-white text-primary border border-2 border-primary shadow-default-mini shadow-black',
   black: 'bg-black text-white text-sm font-semibold',
-  white: '',
-  gray: '',
+  white: 'bg-white text-black text-sm font-semibold',
+  gray: 'bg-gray-300 text-black text-sm font-semibold',
 };
 
 export const SIZE = {

@@ -8,16 +8,16 @@ const Home: NextPage = () => {
   };
 
   return (
-    <div className="p-5">
-      <div className="flex items-center justify-center pt-10">
+    <div className="p-5 bg-blue-100">
+      <div className="flex items-center justify-center mt-10">
         <Button>Explore App</Button>
       </div>
-      <div className="flex items-center justify-center pt-10">
+      <div className="flex items-center justify-center mt-10">
         <Button variant="secondary" onClick={handleClickEvent}>
           Watch Demo
         </Button>
       </div>
-      <div className="flex items-center justify-center pt-10">
+      <div className="flex items-center justify-center mt-10">
         <Button
           as="a"
           className="flex items-center gap-2"
@@ -27,6 +27,32 @@ const Home: NextPage = () => {
           target="_blank"
         >
           Go to App
+          <Icon icon="LinkArrow" />
+        </Button>
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <Button
+          as="a"
+          className="flex items-center gap-2 capitalize"
+          variant="white"
+          size="sm"
+          href="//app.honey.finance/farm"
+          target="_blank"
+        >
+          Read Docs
+          <Icon icon="LinkArrow" />
+        </Button>
+      </div>
+      <div className="flex items-center justify-center mt-10">
+        <Button
+          as="a"
+          className="flex items-center gap-2 capitalize"
+          variant="gray"
+          size="sm"
+          href="//app.honey.finance/farm"
+          target="_blank"
+        >
+          Mirror.xyz
           <Icon icon="LinkArrow" />
         </Button>
       </div>

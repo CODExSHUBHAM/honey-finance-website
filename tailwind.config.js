@@ -7,12 +7,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    colors: {
-      white: '#ffffff',
-      black: '#111111',
-      primary: '#E7B400',
-      secondary: '#E78B00',
-    },
     fontFamily: {
       sans: ['Source Sans Pro', ...defaultTheme.fontFamily.sans],
       mono: ['Red Hat Mono', ...defaultTheme.fontFamily.mono],
@@ -21,6 +15,12 @@ module.exports = {
       boxShadow: {
         default: '6px 6px 0px',
         'default-mini': '4px 4px 0px 0px',
+      },
+      colors: {
+        white: '#ffffff',
+        black: '#111111',
+        primary: '#E7B400',
+        secondary: '#E78B00',
       },
     },
   },

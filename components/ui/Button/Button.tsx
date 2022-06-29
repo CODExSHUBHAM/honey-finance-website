@@ -2,7 +2,7 @@ const BUTTON_TYPE = {
   PRIMARY: 'bg-primary text-white shadow-default-mini shadow-black',
   SECONDARY:
     'bg-white text-primary border border-2 border-primary shadow-default-mini shadow-black',
-  BLACK: 'bg-black text-white text-sm',
+  BLACK: 'bg-black text-white text-sm font-semibold',
 };
 
 const BUTTON_SIZE = {
@@ -24,7 +24,7 @@ function Button({
   return (
     <button
       type="button"
-      className={`leading-tight tracking-[0.08em] uppercase rounded-sm font-mono ${BUTTON_TYPE[buttonType]} ${BUTTON_SIZE[buttonSize]}`}
+      className={`leading-tight tracking-[0.08em] uppercase rounded-sm font-mono  ${BUTTON_TYPE[buttonType]} ${BUTTON_SIZE[buttonSize]}`}
     >
       {children}
     </button>

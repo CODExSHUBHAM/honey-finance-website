@@ -1,4 +1,5 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
@@ -19,6 +20,7 @@ module.exports = {
     extend: {
       boxShadow: {
         default: '6px 6px 0px',
+        'default-mini': '4px 4px 0px 0px',
       },
     },
   },

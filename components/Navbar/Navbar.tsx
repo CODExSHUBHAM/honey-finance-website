@@ -7,23 +7,12 @@ import Icon from '@/components/ui/Icon/Icon';
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white bg-opacity-60 border-b">
+    <Disclosure as="nav" className="bg-white bg-opacity-60">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 md:px-0 pt-2">
             <div className="flex justify-between h-16">
               <div className="flex">
-                <div className="-ml-2 mr-2 flex items-center md:hidden">
-                  {/* Mobile menu button */}
-                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
-                    <span className="sr-only">Open main menu</span>
-                    {open ? (
-                      <div className="block h-6 w-6" aria-hidden="true" />
-                    ) : (
-                      <div className="block h-6 w-6" aria-hidden="true" />
-                    )}
-                  </Disclosure.Button>
-                </div>
                 <div className="flex-shrink-0 flex items-center relative">
                   <Image
                     className="block h-full w-auto"
@@ -183,7 +172,18 @@ export default function Navbar() {
                 </a>
               </div>
               <div className="flex items-center">
-                <div className="flex-shrink-0">
+                <div className="flex items-center md:hidden">
+                  {/* Mobile menu button */}
+                  <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-black ring-2 ring-inset ring-primary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary focus:text-black">
+                    <span className="sr-only">Open main menu</span>
+                    {open ? (
+                      <Icon icon="Close" aria-hidden="true" />
+                    ) : (
+                      <Icon icon="Menu" aria-hidden="true" />
+                    )}
+                  </Disclosure.Button>
+                </div>
+                <div className="flex-shrink-0 hidden md:block">
                   <Button
                     as="a"
                     className="flex items-center gap-2"
@@ -201,85 +201,87 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="md:hidden">
-            <div className="pt-2 pb-3 space-y-1">
-              {/* Current: "bg-indigo-50 border-indigo-500 text-indigo-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" */}
+            <div className="pt-2 pb-3 px-4">
+              <Button
+                as="a"
+                className="flex items-center justify-center gap-2"
+                variant="black"
+                size="md"
+                href="//app.honey.finance/farm"
+                target="_blank"
+              >
+                Go to App
+                <Icon icon="LinkArrow" />
+              </Button>
+            </div>
+            <div className="pt-4 pb-3 border-t border-gray-200">
+              <p className="pl-4 pb-3 text-sm text-gray-500 inline-flex items-center px-1 pt-1 text-sm font-bold font-sans hover:text-primary">
+                Governance
+              </p>
               <Disclosure.Button
                 as="a"
-                href="#"
-                className="bg-indigo-50 border-indigo-500 text-indigo-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                href="//discord.gg/T7RQ8hMamB"
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary hover:bg-primary hover:text-black focus:bg-primary focus:text-black font-mono font-normal text-lg block pl-4 pr-4 py-1 text-base sm:pl-5 sm:pr-6"
               >
-                Dashboard
+                DAO
               </Disclosure.Button>
               <Disclosure.Button
                 as="a"
-                href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                href="//blog.honey.finance/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary hover:bg-primary hover:text-black focus:bg-primary focus:text-black font-mono font-normal text-lg block pl-4 pr-4 py-1 text-base sm:pl-5 sm:pr-6"
               >
-                Team
+                Tokenomics
               </Disclosure.Button>
               <Disclosure.Button
-                as="a"
-                href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
+                as="p"
+                className="text-gray-400 hover:bg-primary hover:text-black focus:bg-primary focus:text-black font-mono font-normal text-lg block pl-4 pr-4 py-1 text-base sm:pl-5 sm:pr-6"
               >
-                Projects
-              </Disclosure.Button>
-              <Disclosure.Button
-                as="a"
-                href="#"
-                className="border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium sm:pl-5 sm:pr-6"
-              >
-                Calendar
+                Forum (Coming Soon)
               </Disclosure.Button>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
-              <div className="flex items-center px-4 sm:px-6">
-                <div className="flex-shrink-0">
-                  {/* <img
-                    className="h-10 w-10 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt=""
-                  /> */}
-                </div>
-                <div className="ml-3">
-                  <div className="text-base font-medium text-gray-800">
-                    Tom Cook
-                  </div>
-                  <div className="text-sm font-medium text-gray-500">
-                    tom@example.com
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  className="ml-auto flex-shrink-0 bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <div className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
-              <div className="mt-3 space-y-1">
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
-                >
-                  Your Profile
-                </Disclosure.Button>
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
-                >
-                  Settings
-                </Disclosure.Button>
-                <Disclosure.Button
-                  as="a"
-                  href="#"
-                  className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-gray-800 hover:bg-gray-100 sm:px-6"
-                >
-                  Sign out
-                </Disclosure.Button>
-              </div>
+              <p className="pl-4 pb-3 text-sm text-gray-500 inline-flex items-center px-1 pt-1 text-sm font-bold font-sans hover:text-primary">
+                Developer
+              </p>
+              <Disclosure.Button
+                as="a"
+                href="//docs.honey.finance/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary hover:bg-primary hover:text-black focus:bg-primary focus:text-black font-mono font-normal text-lg block pl-4 pr-4 py-1 text-base sm:pl-5 sm:pr-6"
+              >
+                Documentation
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="a"
+                href="//github.com/honey-labs"
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary hover:bg-primary hover:text-black focus:bg-primary focus:text-black font-mono font-normal text-lg block pl-4 pr-4 py-1 text-base sm:pl-5 sm:pr-6"
+              >
+                GitHub
+              </Disclosure.Button>
+              <Disclosure.Button
+                as="p"
+                className="text-gray-400 hover:bg-primary hover:text-black focus:bg-primary focus:text-black font-mono font-medium text-lg block pl-4 pr-4 py-2 text-base font-medium sm:pl-5 sm:pr-6"
+              >
+                Honey Labs (Coming Soon)
+              </Disclosure.Button>
+            </div>
+            <div className="pt-4 pb-3 border-t border-gray-200">
+              <Disclosure.Button
+                as="a"
+                href="//blog.honey.finance/"
+                target="_blank"
+                rel="noreferrer"
+                className="text-primary hover:bg-primary hover:text-black focus:bg-primary focus:text-black font-mono font-normal text-lg block pl-4 pr-4 py-1 text-base sm:pl-5 sm:pr-6"
+              >
+                Blog
+              </Disclosure.Button>
             </div>
           </Disclosure.Panel>
         </>

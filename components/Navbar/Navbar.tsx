@@ -7,10 +7,13 @@ import Icon from '@/components/ui/Icon/Icon';
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white bg-opacity-60">
+    <Disclosure
+      as="nav"
+      className="bg-white bg-opacity-60 absolute top-0 left-0 right-0 "
+    >
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 md:px-0 pt-2">
+          <div className="max-w-7xl lg:max-w-full mx-auto px-4 md:px-0 pt-2">
             <div className="flex justify-between h-16">
               <div className="flex">
                 <div className="flex-shrink-0 flex items-center relative">

@@ -7,4 +7,5 @@ export const SIZE = {
 export const COLOR = {
   white: 'text-white',
   gray: 'text-gray-500',
+  black: 'text-black',
 };

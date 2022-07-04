@@ -12,7 +12,7 @@ function HeaderSection(): JSX.Element {
           <Image
             src={HeaderImage}
             alt="Header-Image"
-            className="w-full h-auto"
+            className="w-full h-auto z-0"
           ></Image>
         </div>
         <div className="flex flex-col gap-6">

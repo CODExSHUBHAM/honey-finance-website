@@ -11,12 +11,42 @@ function FeaturedSection(): JSX.Element {
       <p className="text-black uppercase text-lg font-normal leading-5">
         As Featured In
       </p>
-      <div className="flex flex-col gap-8 w-fit">
-        <Image src={Featured1} className="" alt="Featured1" />
-        <Image src={Featured2} className="" alt="Featured2" />
-        <Image src={Featured3} className="" alt="Featured3" />
-        <Image src={Featured4} className="" alt="Featured4" />
-        <Image src={Featured5} className="" alt="Featured5" />
+      <div className="flex flex-col items-center justify-center gap-8">
+        <Image
+          src={Featured1}
+          alt="Featured1"
+          width={250}
+          height={40}
+          layout="fixed"
+        />
+        <Image
+          src={Featured2}
+          alt="Featured2"
+          width={250}
+          height={60}
+          layout="fixed"
+        />
+        <Image
+          src={Featured3}
+          alt="Featured3"
+          width={250}
+          height={100}
+          layout="fixed"
+        />
+        <Image
+          src={Featured4}
+          alt="Featured4"
+          width={250}
+          height={50}
+          layout="fixed"
+        />
+        <Image
+          src={Featured5}
+          alt="Featured5"
+          width={250}
+          height={40}
+          layout="fixed"
+        />
       </div>
     </div>
   );

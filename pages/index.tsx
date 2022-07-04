@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import HeaderSection from '@/components/HeaderSection/HeaderSection';
 import Navbar from '@/components/Navbar/Navbar';
 import FeaturedSection from '@/components/FeaturedSection/FeaturedSection';
+import Section1 from '@/components/Section1/Section1';
 
 const Home: NextPage = () => {
   return (
@@ -9,6 +10,7 @@ const Home: NextPage = () => {
       <Navbar />
       <HeaderSection />
       <FeaturedSection />
+      <Section1 />
     </div>
   );
 };

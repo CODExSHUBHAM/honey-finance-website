@@ -5,9 +5,9 @@ import HeaderImage from '@/assets/images/header-image.png';
 
 function HeaderSection(): JSX.Element {
   return (
-    <div className="header-section md:min-h-screen bg-cover bg-right-top bg-no-repeat flex flex-col justify-center items-center mt-10 py-4">
-      <div className="flex flex-col  md:flex-row-reverse md:items-center md:gap-4 max-w-7xl lg:max-w-full mx-auto px-4 md:px-0">
-        <div className="">
+    <div className="header-section md:min-h-screen bg-cover bg-right-top bg-no-repeat flex flex-col justify-center items-center mt-10 px-4 py-4">
+      <div className="flex flex-col  md:flex-row-reverse md:items-center md:gap-4 max-w-7xl lg:max-w-full mx-auto md:px-0">
+        <div>
           <Image
             src={HeaderImage}
             alt="Header-Image"

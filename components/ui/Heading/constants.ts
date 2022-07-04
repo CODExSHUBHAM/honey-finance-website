@@ -1,6 +1,7 @@
 export const VARIANT = {
   black: 'text-black',
   white: 'text-white',
+  primary: 'text-primary',
 };
 
 export const SIZE = {

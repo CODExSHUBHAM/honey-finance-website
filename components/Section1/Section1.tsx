@@ -5,7 +5,7 @@ import Illustration1 from '@/assets/Illustrations/Illustration1.png';
 
 function Section1(): JSX.Element {
   return (
-    <div className="flex flex-col gap-5  py-4 px-4">
+    <div className="bg-white bg-opacity-95 flex flex-col gap-5  py-4 px-4">
       <Heading size="sm" variant="black" className="font-bold">
         Borrow against your NFTs
       </Heading>

@@ -7,11 +7,11 @@ import safe from '@/assets/Illustrations/safe.png';
 
 function Section2(): JSX.Element {
   return (
-    <div className="bg-primary">
+    <div className="bg-primary bg-opacity-95 border border-black">
       <Box
         shadowType="BLACK"
         shadowDirection="right"
-        className="p-1 text-center"
+        className="p-1 text-center bg-opacity-90"
       >
         <Heading variant="black" className="font-bold">
           NFT Liquidation Solution

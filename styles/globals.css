@@ -7,3 +7,11 @@
 .header-section {
   background-image: url('../assets/images/header-pattern.svg');
 }
+
+.bg-coin {
+  background-image: url('../assets/images/HoneyFallingCoins.png');
+}
+
+.bg-hex {
+  background-image: url('../assets/images/Hex\ Pattern.png');
+}

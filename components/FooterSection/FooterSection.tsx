@@ -11,11 +11,42 @@ import Box from '../ui/Box/Box';
 
 function FooterSection(): JSX.Element {
   return (
-    <div className="bg-white px-2 py-4 flex flex-col items-center text-center">
-      <Heading size="sm" variant="black" className="font-bold">
-        Honey Finance is run by our DAO and operated by Honey Labs.
-      </Heading>
+    <div className="bg-white px-2 py-4 md:p-20 flex flex-col md:flex-row items-center text-center md:text-left">
       <div>
+        <Heading size="sm" variant="black" className="font-bold">
+          Honey Finance is run by our DAO and operated by Honey Labs.
+        </Heading>
+        <div className="flex flex-col md:flex-row md:gap-10 items-center">
+          <Button
+            as="a"
+            className="flex items-center gap-2 w-fit mt-6 "
+            variant="gray"
+            size="sm"
+            href=""
+            target="_blank"
+          >
+            Documentation
+            <Icon icon="LinkArrow" />
+          </Button>
+          <Button
+            as="a"
+            className="flex items-center gap-2 w-fit mt-6 "
+            variant="gray"
+            size="sm"
+            href=""
+            target="_blank"
+          >
+            Whitepaper
+            <Icon icon="LinkArrow" />
+          </Button>
+        </div>
+        <div className="flex items-center gap-8 w-fit mt-6 md:mt-20">
+          <Image src={Discord} alt="Discord Icon" />
+          <Image src={Telegram} alt="Telegram Icon" />
+          <Image src={Twitter} alt="Twitter Icon" />
+        </div>
+      </div>
+      <div className="md:flex">
         <Box shadowType="DARK" className="py-6 px-2 flex flex-col items-center">
           <Image src={Logo} alt="Honey Logo" />
           <Heading size="sm" variant="black" className="font-bold pt-3">
@@ -38,35 +69,6 @@ function FooterSection(): JSX.Element {
             protocol.
           </p>
         </Box>
-      </div>
-      <div className="flex flex-col items-center">
-        <Button
-          as="a"
-          className="flex items-center gap-2 w-fit mt-6 "
-          variant="gray"
-          size="sm"
-          href=""
-          target="_blank"
-        >
-          Documentation
-          <Icon icon="LinkArrow" />
-        </Button>
-        <Button
-          as="a"
-          className="flex items-center gap-2 w-fit mt-6 "
-          variant="gray"
-          size="sm"
-          href=""
-          target="_blank"
-        >
-          Whitepaper
-          <Icon icon="LinkArrow" />
-        </Button>
-      </div>
-      <div className="flex items-center gap-8 w-fit mt-6">
-        <Image src={Discord} alt="Discord Icon" />
-        <Image src={Telegram} alt="Telegram Icon" />
-        <Image src={Twitter} alt="Twitter Icon" />
       </div>
     </div>
   );

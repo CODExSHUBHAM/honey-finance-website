@@ -7,11 +7,11 @@ import Featured5 from '@/assets/images/featured/Featured5.png';
 
 function FeaturedSection(): JSX.Element {
   return (
-    <div className="bg-neutral-50 flex flex-col items-center justify-center gap-10 py-4">
+    <div className="bg-neutral-50 flex flex-col items-center justify-center gap-10 py-4 md:py-10">
       <p className="text-black uppercase text-lg font-normal leading-5">
         As Featured In
       </p>
-      <div className="flex flex-col items-center justify-center gap-8">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8">
         <Image
           src={Featured1}
           alt="Featured1"

@@ -2,16 +2,13 @@ import Image from 'next/image';
 import Heading from '../ui/Heading/Heading';
 import Button from '../ui/Button/Button';
 import Icon from '../ui/Icon/Icon';
-import Twitter from '@/assets/images/Twitter.png';
-import Telegram from '@/assets/images/Telegram.png';
-import Discord from '@/assets/images/Discord.png';
 import Logo from '@/assets/images/logo/LogoIcon.png';
 import Potion from '@/assets/images/potion.png';
 import Box from '../ui/Box/Box';
 
 function FooterSection(): JSX.Element {
   return (
-    <div className="bg-white px-2 py-4 md:p-20 flex flex-col md:flex-row items-center text-center md:text-left">
+    <div className="bg-white px-1 py-16 md:p-20 flex flex-col md:flex-row items-center text-center md:text-left">
       <div>
         <Heading size="sm" variant="black" className="font-bold">
           Honey Finance is run by our DAO and operated by Honey Labs.
@@ -19,7 +16,7 @@ function FooterSection(): JSX.Element {
         <div className="flex flex-col md:flex-row md:gap-10 items-center">
           <Button
             as="a"
-            className="flex items-center gap-2 w-fit mt-6 "
+            className="flex items-center gap-2 justify-center w-10/12 md:w-fit mt-6 "
             variant="gray"
             size="sm"
             href=""
@@ -30,7 +27,7 @@ function FooterSection(): JSX.Element {
           </Button>
           <Button
             as="a"
-            className="flex items-center gap-2 w-fit mt-6 "
+            className="flex items-center gap-2 w-10/12 justify-center md:w-fit mt-6 "
             variant="gray"
             size="sm"
             href=""
@@ -40,10 +37,10 @@ function FooterSection(): JSX.Element {
             <Icon icon="LinkArrow" />
           </Button>
         </div>
-        <div className="flex items-center gap-8 w-fit mt-6 md:mt-20">
-          <Image src={Discord} alt="Discord Icon" />
-          <Image src={Telegram} alt="Telegram Icon" />
-          <Image src={Twitter} alt="Twitter Icon" />
+        <div className="hidden md:flex items-center gap-8 w-fit mt-20">
+          <Icon icon="Discord" />
+          <Icon icon="Telegram" />
+          <Icon icon="Twitter" />
         </div>
       </div>
       <div className="md:flex">
@@ -69,6 +66,11 @@ function FooterSection(): JSX.Element {
             protocol.
           </p>
         </Box>
+      </div>
+      <div className="md:hidden flex items-center gap-14 w-full justify-center mt-8">
+        <Icon icon="Discord" />
+        <Icon icon="Telegram" />
+        <Icon icon="Twitter" />
       </div>
     </div>
   );

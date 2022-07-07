@@ -7,16 +7,16 @@ import safe from '@/assets/Illustrations/safe.png';
 
 function Section2(): JSX.Element {
   return (
-    <div className="bg-primary bg-opacity-95 border border-black md:py-20 md:flex md:flex-col md:items-center">
+    <div className="bg-primary bg-opacity-[0.95] border border-black py-16 md:py-20 md:flex md:flex-col md:items-center">
       <Box
         shadowType="BLACK"
         shadowDirection="right"
-        className="p-1 text-center bg-opacity-90 md:w-fit md:p-20 md:flex md:flex-col md:items-center"
+        className="py-16 text-center bg-opacity-90 md:w-fit md:p-20 md:flex md:flex-col md:items-center"
       >
         <Heading variant="black" className="font-bold">
           NFT Liquidation Solution
         </Heading>
-        <div className="md:flex md:pt-20">
+        <div className="md:flex md:pt-20 pt-12">
           <Box
             shadowType="BLACK"
             shadowDirection="right"

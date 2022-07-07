@@ -8,7 +8,7 @@ import Azuki from '@/assets/images/Azuki.png';
 
 function Section3(): JSX.Element {
   return (
-    <div className="bg-black bg-hex bg-opacity-95 p-4 text-center md:grid md:grid-cols-4 md:grid-rows-2 h-fit">
+    <div className="bg-black bg-hex bg-opacity-95 px-4 py-16 text-center md:grid md:grid-cols-4 md:grid-rows-2 h-fit">
       <div className="md:flex md:gap-5 md:col-start-1 md:col-end-4 h-fit">
         <div>
           <p className="font-mono font-semibold text-2xl text-gray-500 pt-4 uppercase ">
@@ -48,7 +48,7 @@ function Section3(): JSX.Element {
         </div>
       </div>
 
-      <Box shadowType="BLACK" className="py-4 px-3 text-left w-fit">
+      <Box shadowType="BLACK" className="mt-16 py-4 px-3 text-left w-fit">
         <div className="flex items-center justify-between">
           <p className="font-mono font-bold text-2xl text-gray-700">DegenApe</p>
           <p className="font-mono font-normal text-base text-gray-500 ">

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Box from '../ui/Box/Box';
 import Heading from '../ui/Heading/Heading';
 import key from '@/assets/Illustrations/key.png';
@@ -20,9 +19,9 @@ function Section2(): JSX.Element {
           <Box
             shadowType="BLACK"
             shadowDirection="right"
-            className="p-2 md:w-96 md:h-72"
+            className="p-2 md:w-96 md:h-72 flex flex-col items-center py-6"
           >
-            <Image src={key} alt="key Illustration" />
+            <img src={key.src} alt="key Illustration" className="w-24 mb-3" />
             <Heading
               size="sm"
               variant="black"
@@ -38,9 +37,9 @@ function Section2(): JSX.Element {
           <Box
             shadowType="BLACK"
             shadowDirection="right"
-            className="p-2 md:w-96 md:h-72"
+            className="p-2 md:w-96 md:h-72 flex flex-col items-center py-6"
           >
-            <Image src={chain} alt="key Illustration" />
+            <img src={chain.src} alt="key Illustration" className="w-24 mb-3" />
             <Heading
               size="sm"
               variant="black"
@@ -56,9 +55,9 @@ function Section2(): JSX.Element {
           <Box
             shadowType="BLACK"
             shadowDirection="right"
-            className="p-2 md:w-96 md:h-72"
+            className="p-2 md:w-96 md:h-72 flex flex-col items-center py-6"
           >
-            <Image src={safe} alt="key Illustration" />
+            <img src={safe.src} alt="key Illustration" className="w-24 mb-3" />
             <Heading
               size="sm"
               variant="black"

@@ -12,7 +12,7 @@ function FeaturedSection(): JSX.Element {
         As Featured In
       </p>
 
-      <div className="flex flex-col md:flex-row items-center justify-center md:justify-around w-full gap-12">
+      <div className="flex flex-col md:flex-row items-center justify-center md:justify-around w-full gap-12 md:w-[90vw]">
         <img src={Featured1.src} alt="Company logo" className="h-10 w-auto " />
         <img src={Featured2.src} alt="NFT nyc Logo" className="h-12 w-auto " />
         <img

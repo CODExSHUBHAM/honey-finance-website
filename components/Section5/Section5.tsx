@@ -6,15 +6,19 @@ import Icon from '@/components/ui/Icon/Icon';
 
 function Section5(): JSX.Element {
   return (
-    <div className="bg-black px-6 py-16 md:flex md:items-center md:justify-around md:p-10">
-      <div className="text-center flex flex-col items-center">
+    <div className="bg-black px-6 py-16 md:flex md:items-center md:justify-around md:py-28">
+      <div className="text-center flex flex-col items-center md:items-baseline">
         <Image src={FindingMan} alt="FindingMan Illustration" />
-        <Heading size="sm" variant="white" className="font-bold pt-4">
+        <Heading
+          size="sm"
+          variant="white"
+          className="font-bold pt-4 md:text-5xl"
+        >
           How it works?
         </Heading>
         <Button
           as="a"
-          className="flex items-center justify-center w-10/12 gap-2 mt-4"
+          className="flex items-center justify-center w-10/12 md:w-fit gap-2 mt-4"
           variant="white"
           size="sm"
           href=""
@@ -24,9 +28,9 @@ function Section5(): JSX.Element {
           <Icon icon="LinkArrow" />
         </Button>
       </div>
-      <div className="flex flex-col md:flex-row items-center md:gap-10">
-        <div className="md:w-48 text-center">
-          <p className="font-mono text-white text-xl font-bold pt-8">
+      <div className="flex flex-col md:flex-row items-center md:gap-20">
+        <div className="md:w-48 text-center md:text-left">
+          <p className="font-mono text-white text-xl font-bold pt-8 md:pt-4">
             Onboarding
           </p>
           <p className="font-mono text-sm font-medium leading-5 text-gray-400 pt-2 ">
@@ -34,8 +38,8 @@ function Section5(): JSX.Element {
             capital stored away in your NFT collection.
           </p>
         </div>
-        <div className="md:w-48 text-center">
-          <p className="font-mono text-white text-xl font-bold pt-8">
+        <div className="md:w-48 text-center md:text-left">
+          <p className="font-mono text-white text-xl font-bold pt-8 md:pt-0">
             Lending Flow
           </p>
           <p className="font-mono text-sm font-medium leading-5 text-gray-400 pt-2 ">
@@ -43,8 +47,8 @@ function Section5(): JSX.Element {
             for protocol fees.
           </p>
         </div>
-        <div className="md:w-48 text-center">
-          <p className="font-mono text-white text-xl font-bold pt-8">
+        <div className="md:w-48 text-center md:text-left">
+          <p className="font-mono text-white text-xl font-bold pt-8 md:pt-0">
             Borrow Flow
           </p>
           <p className="font-mono text-sm font-medium leading-5 text-gray-400 pt-2 ">

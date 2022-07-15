@@ -21,15 +21,15 @@ function Section2(): JSX.Element {
             shadowDirection="right"
             className="p-2 md:w-96 md:h-72 flex flex-col items-center py-6"
           >
-            <img src={key.src} alt="key Illustration" className="w-24 mb-3" />
+            <img src={key.src} alt="key Illustration" className="w-24" />
             <Heading
               size="sm"
               variant="black"
-              className="font-bold pt-2 md:pt-4 text-center"
+              className="font-bold pt-2 md:pt-4 text-center text-3xl"
             >
               Opportunity Cost
             </Heading>
-            <p className="font-mono text-gray-500 font-normal pt-2 md:pt-8">
+            <p className="font-mono text-gray-500 font-normal pt-2 md:pt-8 text-sm">
               Invest in crypto anytime, anywhere with our safe, secure, and easy
               to use online platform
             </p>
@@ -39,15 +39,15 @@ function Section2(): JSX.Element {
             shadowDirection="right"
             className="p-2 md:w-96 md:h-72 flex flex-col items-center py-6"
           >
-            <img src={chain.src} alt="key Illustration" className="w-24 mb-3" />
+            <img src={chain.src} alt="key Illustration" className="w-24" />
             <Heading
               size="sm"
               variant="black"
-              className="font-bold pt-2 md:pt-4 text-center"
+              className="font-bold pt-2 md:pt-4 text-center text-3xl"
             >
               Non-fungibility
             </Heading>
-            <p className="font-mono text-gray-500 font-normal pt-2 md:pt-8">
+            <p className="font-mono text-gray-500 font-normal pt-2 md:pt-8 text-sm">
               We have thousands of ATMs located across the U.S. where you can
               easily convert cash to crypto
             </p>
@@ -57,15 +57,15 @@ function Section2(): JSX.Element {
             shadowDirection="right"
             className="p-2 md:w-96 md:h-72 flex flex-col items-center py-6"
           >
-            <img src={safe.src} alt="key Illustration" className="w-24 mb-3" />
+            <img src={safe.src} alt="key Illustration" className="w-24 mb-4" />
             <Heading
               size="sm"
               variant="black"
-              className="font-bold pt-2 md:pt-4 text-center"
+              className="font-bold pt-2 md:pt-4 text-center text-3xl"
             >
               Unrealized Gains
             </Heading>
-            <p className="font-mono text-gray-500 font-normal pt-2 md:pt-8">
+            <p className="font-mono text-gray-500 font-normal pt-2 md:pt-8 text-sm">
               Store your growing investments in our non-custodial wallet that
               gives you access to a full suite of DeFi services in one place
             </p>

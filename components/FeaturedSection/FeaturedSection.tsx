@@ -5,7 +5,6 @@ import Featured4 from '@/assets/images/featured/Featured4.png';
 import Featured5 from '@/assets/images/featured/Featured5.svg';
 
 function FeaturedSection(): JSX.Element {
-  console.log(Featured1);
   return (
     <div className="bg-neutral-50 flex flex-col items-center justify-center gap-10 py-20 md:py-10">
       <p className="font-mono text-black uppercase text-lg font-normal leading-5">

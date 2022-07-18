@@ -3,7 +3,7 @@ import React from 'react';
 const SHADOW_TYPE = {
   LIGHT: 'shadow-primary',
   DARK: 'border border-black shadow-primary',
-  BLACK: 'shadow-black',
+  BLACK: 'border border-black shadow-black',
 };
 
 const SHADOW_DIRECTION = {

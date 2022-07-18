@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .header-section {
   background-image: url('../assets/images/header-pattern.svg');
+}
+
+.bg-coin {
+  background-image: url('../assets/images/HoneyFallingCoins.png');
+}
+
+.bg-hex {
+  background-image: url('../assets/images/Hex\ Pattern.png');
 }
